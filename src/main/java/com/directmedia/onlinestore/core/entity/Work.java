@@ -14,6 +14,7 @@ public class Work {
     private int release;
     private String summary;
     private Artist mainArtist;
+    private long id;
 
     public Work() {
     }
@@ -21,7 +22,10 @@ public class Work {
     public Work(String title) {
         this.title = title;
     }
-    
+
+    public Work(long id) {
+        this.id = id;
+    }
     
 
     public String getTitle() {
@@ -63,5 +67,8 @@ public class Work {
     public void setMainArtist(Artist mainArtist) {
         this.mainArtist = mainArtist;
     }
-    
+
+    public long getId() {
+        return id;
+    }
 }

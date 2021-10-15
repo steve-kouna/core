@@ -14,13 +14,13 @@ public class Catalogue {
 
     public Catalogue() {
     }
-    
+
     public static void listOfWorks(Work work){
         HashSet<Work> hset = new HashSet();
         hset.add(work);
-        
-        for (Work work1 : hset) {
-            System.out.println(work1.getTitle() + "( " + work1.getRelease() + " )");
-        }
+
+//        for (Work work1 : hset) {
+//            System.out.println(work1.getTitle() + "( " + work1.getRelease() + " )");
+//        }
     }
 }
